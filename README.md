@@ -22,3 +22,7 @@ pip install selenium
 Open for any upgrade suggestions.
 
 Enjoy.
+
+
+https://user-images.githubusercontent.com/63158735/160473428-793a6d62-ed76-45c5-b975-dc11b331a069.mp4
+
