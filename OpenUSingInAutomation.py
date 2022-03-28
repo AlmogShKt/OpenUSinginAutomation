@@ -6,30 +6,30 @@
 #open cmd\terminal - pip install selenium
 
 #To download chromedriver - https://sites.google.com/chromium.org/driver/
-#Choose your version that match to your broswer
-#Save and extract the file, then move to any place you want, and copy the path of the file
+#Choose the version that matches your broswer
+#Save and extract the file, then move to any place you want and copy the path of the file
 
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
-#Thw OpenU login URL
+#The OpenU login URL
 WEBSEITE_URL = "https://sso.apps.openu.ac.il/login?T_PLACE=https://sheilta.apps.openu.ac.il/pls/dmyopt2/sheilta.main"
 
-#Path for crhomedrive.exe file
+#Path for chromedrive.exe file
 #For Mac users remove the '.exe'
 PATH_FOR_DRIVER = "PATH\chromedriver.exe"
 
-#Student information, replace in your:
+#Student information, replace with your login information:
 USER_NAME = "user_name"
-PASSWARD = "password"
+PASSWORD = "password"
 ID = "id"
 
 #Set the driver
 driver = webdriver.Chrome(PATH_FOR_DRIVER)
 
-#Open thw OpenU login page
+#Open the OpenU login page
 driver.get(WEBSEITE_URL)
 
 # Get element with tag name 'p_user' -> student name
@@ -40,7 +40,7 @@ element.send_keys(USER_NAME)
 # Get element with tag name 'p_sisma' -> student password
 element = driver.find_element(By.ID, 'p_sisma')
 #Send the student password
-element.send_keys(PASSWARD)
+element.send_keys(PASSWORD)
 
 # Get element with tag name 'p_mis_student' -> student ID
 element = driver.find_element(By.ID, 'p_mis_student')
