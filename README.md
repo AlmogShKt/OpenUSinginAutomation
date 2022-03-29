@@ -12,8 +12,9 @@ The automate will fill all the relevant fields in the page:
 For now the recommended way to run this automation is via any Python IDLE.
 
 Before running the automation, make sure that:
-1. Pyhton is installed on your computer.
-2. Selenium is installed via  
+1. Pyhton is installed on your computer. (For Windows users install the 32bit version!(works on 64 bit) [Resolve problem for this issue](https://stackoverflow.com/questions/23081507/where-to-find-64-bit-version-of-chromedriver-exe-for-selenium-webdriver)
+
+3. Selenium is installed via  
 
 ```ruby
 pip install selenium
