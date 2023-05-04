@@ -1,3 +1,6 @@
+  <p align="center"> <img src="https://komarev.com/ghpvc/?username=OpenUSinginAutomation&label=Repo%20views&color=0e75b6&style=flat" alt="DogFeeder" /> </p>
+
+___
 ## OpenUSinginAutomation - version 1.0
 
 For all the students in the Open University of Israel.
